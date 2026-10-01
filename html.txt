@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple modern static website">
+  <title>My Website</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f5f7fb;
+    }
+
+    nav {
+      background: #111827;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h2 {
+      color: #60a5fa;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #2563eb;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #e5e7eb;
+    }
+
+    .about {
+      padding: 70px 10%;
+      text-align: center;
+      background: white;
+    }
+
+    .about h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      color: #555;
+    }
+
+    .cards {
+      padding: 70px 10%;
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #2563eb;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>My Website</h2>
+
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div>
+      <h1>Welcome to My Website</h1>
+      <p>A simple, fast and responsive static website.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      This is a sample static webpage built using HTML and CSS.
+      You can customize the text, colors, images and sections
+      according to your requirements.
+    </p>
+  </section>
+
+  <section class="cards" id="services">
+
+    <div class="card">
+      <h3>Web Design</h3>
+      <p>Modern and responsive websites for desktop and mobile.</p>
+    </div>
+
+    <div class="card">
+      <h3>Development</h3>
+      <p>Fast and lightweight websites built with clean code.</p>
+    </div>
+
+    <div class="card">
+      <h3>Cloud Hosting</h3>
+      <p>Deploy your static website to a cloud platform easily.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2026 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
